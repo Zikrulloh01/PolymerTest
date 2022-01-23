@@ -2,7 +2,6 @@ package com.totdomvc.tests;
 
 
 import com.totdomvc.pages.PolymerPage;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,7 +11,7 @@ public class PolymerTest extends TestBase{
     PolymerPage polymerPage = new PolymerPage();
 
     @Test
-    public void test1() throws InterruptedException {
+    public void test1(){
 
         polymerPage.getTab("JavaScript").click();
         polymerPage.getLink("Polymer").click();
